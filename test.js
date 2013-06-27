@@ -18,6 +18,6 @@ css.render(str, { filename: "test.styl" }, function(err, css) {
     http.createServer(function (req, res) {
         res.writeHead(200, {'Content-Type': 'text/css'});
         res.end(css);
-    }).listen(8888, '127.0.0.1');
-    console.log('已经启动222 http://127.0.0.1:8888/');
+    }).listen(3000, '127.0.0.1');
+    console.log('已经启动 http://127.0.0.1:3000/');
 });
